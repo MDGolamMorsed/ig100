@@ -1,0 +1,115 @@
+=====================================================================================[24]==================================================================================
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'ALL_PIN_VALUE','pin': 'null','value': 'null'}}"
+[255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 0, 255, 255, 255, 255, 255, 255]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 1, 255, 255, 255, 255, 255, 255]
+
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': 'TID','headers': {},'payload': {'command': 'ALL_PIN_VALUE','pin': 'null','value': 'null'}}"
+
+
+=====================================================================================[12]===================================================================================
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_DIGITAL_ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_DIGITAL_ALL_PIN_VALUE','pin': 'null','value': 'null'}}"
+[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_INTERRUPT_ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255]
+
+=====================================================================================[4]====================================================================================
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_ANALOG_ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[1, 1, 1, 1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_ANALOG_ALL_PIN_VALUE','pin': 'null','value': 'null'}}"
+[47, 42, 39, 37]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_RELAY_ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[1, 1, 1, 1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_RELAY_ALL_PIN_VALUE','pin': 'null','value': 'null'}}"
+[1, 1, 1, 1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_PWM_ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[1, 1, 1, 1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_PWM_ALL_PIN_VALUE','pin': 'null','value': 'null'}}"
+[100, 100, 100, 100]
+
+======================================================================================[DHT]==================================================================================
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_DIGTIAL_PIN_TEMPERATURE_VALUE','pin': '06','value': 'null'}}"
+[25]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_DIGTIAL_PIN_HUMIDITY_VALUE','pin': '06','value': 'null'}}"
+[25]
+
+======================================================================================[1]====================================================================================
+
+--------------------------------------------------------------------------------------[RELAY]----------------------------------------------------------------------------------
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'SET_RELAY_ALL_PIN_VALUE','pin': 'null','value': '1'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'SET_RELAY_PIN_VALUE','pin': '1','value': '1'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_RELAY_PIN_STATUS','pin': 'null','value': 'null'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_RELAY_PIN_VALUE','pin': '1','value': 'null'}}"
+[1]
+---------------------------------------------------------------------------------------[DIGITAL]------------------------------------------------------------------------------------
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_DIGTIAL_PIN_STATUS','pin': '01','value': 'null'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_DIGTIAL_PIN_VALUE','pin': '01','value': 'null'}}"
+[0]
+
+-----------------------------------------------------------------------------------------[ANALOG]-----------------------------------------------------------------------------
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_ANALOG_PIN_STATUS','pin': '1','value': 'null'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_ANALOG_PIN_VALUE','pin': '1','value': 'null'}}"
+[35]
+
+----------------------------------------------------------------------------------------------[PWM]------------------------------------------------------------------------------
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'SET_PWM_ALL_PIN_VALUE','pin': 'null','value': '100'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'SET_PWM_PIN_VALUE','pin': '1','value': '100'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_PWM_PIN_STATUS','pin': '1','value': 'null'}}"
+[1]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_PWM_PIN_VALUE','pin': '1','value': 'null'}}"
+[100]
+
+==========================================================================================================================================================================================
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_INTERRUPT_ALL_PIN_STATUS','pin': 'null','value': 'null'}}"
+[0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_INTERRUPT_PIN_STATUS','pin': '1','value': 'null'}}"
+[254]
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_MODBUS_MESSAGE','pin': 'null','value': 'null'}}"
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'GET_CANBUS_MESSAGE','pin': '1','value': '1'}}"
+
+mosquitto_pub -t /ig100/a840411be9bf/request -m "{'message_uid': '00001','headers': {},'payload': {'command': 'INTERRUPT_RESPONSE','pin': '1','value': 'null'}}"
+
+
+
+
+
+
